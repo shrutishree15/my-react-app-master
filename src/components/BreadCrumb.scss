@@ -1,0 +1,29 @@
+.breadcrumb {
+    margin: 1px 0;
+  
+  
+    @media (max-width: 768px) {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  .breadcrumb p{
+    font-size: 14px;
+    color: #727D87;
+  }
+  .breadcrumb span {
+    font-size: 14px;
+    color: #727D87;
+    cursor: pointer;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .breadcrumb span::after {
+    content: " ❯ ";
+   
+  }
+  

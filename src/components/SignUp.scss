@@ -1,0 +1,78 @@
+.SignUp-container {
+    display: flex;
+    flex-direction: column; /* Display as column on smaller screens */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .left-content {
+    margin-right: 0; /* Reset margin for smaller screens */
+  }
+  
+  .right-content {
+    display: flex;
+    flex-direction: column; /* Display as column on smaller screens */
+    align-items: center;
+  }
+  
+  .signup-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px; /* Adjust font size for smaller screens */
+    line-height: 32px; /* Adjust line height for smaller screens */
+    width: auto; /* Remove fixed width for smaller screens */
+    height: auto; /* Remove fixed height for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+  
+  .input-field {
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Use the same border-radius for all sides */
+    padding: 8px 12px;
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+  }
+  
+  .signup-button {
+    background-color: #1B88F4;
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* Use the same border-radius for all sides */
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media queries for responsiveness across different screen sizes */
+  
+  /* Small devices (phones) */
+  @media screen and (max-width: 576px) {
+    .SignUp-container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .signup-text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    .SignUp-container {
+      padding: 0 20px; /* Adjust padding for medium screens */
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media screen and (min-width: 993px) {
+    .SignUp-container {
+      padding: 0 40px; /* Adjust padding for larger screens */
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.related-deals {
+    font-size: 28px; /* Adjust font size for smaller screens */
+    margin-bottom: 20px; /* Add bottom margin */
+    line-height: 36px; /* Adjust line height for smaller screens */
+    color: #2C384A;
+    display: flex;
+    justify-content: flex-start; /* Align text to the left */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    justify-content: space-between; /* Align cards with equal spacing */
+  }
+  
+  .card-container .card {
+    margin-bottom: 20px; /* Add bottom margin to each card */
+    flex: 1 0 calc(33.33% - 20px); /* Adjust card width for three cards per row */
+  }
+  
+  /* Media queries for responsiveness across different screen sizes */
+  
+  /* Small devices (phones) */
+  @media screen and (max-width: 576px) {
+    .related-deals {
+      font-size: 24px; /* Further reduce font size for smaller screens */
+      line-height: 32px; /* Further adjust line height for smaller screens */
+    }
+  
+    .card-container .card {
+      flex: 1 0 calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    .card-container .card {
+      flex: 1 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media screen and (min-width: 993px) {
+    .card-container .card {
+      flex: 1 0 calc(33.33% - 20px); /* Three cards per row on large screens */
+    }
+  }
+  

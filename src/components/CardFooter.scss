@@ -1,0 +1,113 @@
+.card {
+    border-radius: 12px;
+    width: 333px;
+    height: auto;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    overflow: hidden; /* Ensure content doesn't overflow the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers items horizontally */
+  }
+  
+  .card-image {
+    width: 50%;
+    max-width: 100%; /* Adjust the width to fill the container */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card-content {
+    display: flex; /* Display items side by side */
+    justify-content: center; /* Center items horizontally */
+    /* Gray background */
+    padding: 8px; /* Adjust padding as needed */
+  }
+  
+  .discount {
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 400; /* Normal font weight */
+    font-size: 13px; /* Font size */
+    line-height: 20px; /* Line height */
+    padding: 4px 8px; /* Adjust padding as needed */
+    margin: 8px; /* Add margin between them */
+    border-radius: 6px; /* Rounded border */
+    background-color: #f2f2f2;
+    color: #074786
+    ;
+    margin-right: auto;
+  }
+  
+  .time {
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 400; /* Normal font weight */
+    font-size: 13px; /* Font size */
+    line-height: 20px; /* Line height */
+    padding: 4px 8px; /* Adjust padding as needed */
+    margin: 8px; /* Add margin between them */
+    border-radius: 6px; /* Rounded border */
+    background-color: #f2f2f2;
+    color: #074786
+    ;
+    margin-right: auto;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 10px 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999999;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .new-price {
+    font-weight: bold;
+    color: #333333;
+    margin-left: 10px;
+  }
+  
+  .discount-label {
+    margin-left: 10px;
+    color: #ff0000;
+  }
+  
+  .button {
+    margin-top: 10px;
+    width: 292px ;
+    padding: 8px 16px;
+    height: 48px
+    ;
+    border-radius: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

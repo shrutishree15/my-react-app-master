@@ -1,0 +1,81 @@
+.Navbar {
+  background-color: #000;
+  color: white;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+  .search-bar {
+    position: relative; /* Set position to relative for absolute positioning of icon */
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    
+    .input {
+      width: 130px; /* Adjust width for smaller screens */
+      height: 20px; /* Adjust height for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute; /* Set position to relative for absolute positioning of icon */
+      color: rgb(14, 14, 14);
+      left: 10px; /* Adjust position for smaller screens */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 90px; /* Adjust gap between navigation links */
+
+    li {
+      margin-left: -340px; /* Moved the navigation links slightly to the left */
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+
+  /* Media queries for responsiveness across different screen sizes */
+
+  /* Small devices (phones) */
+  @media screen and (max-width: 576px) {
+    .container {
+      flex-direction: column; /* Change flex direction to column for smaller screens */
+      align-items: flex-start; /* Align items to start for smaller screens */
+      height: auto; /* Remove fixed height for smaller screens */
+    }
+
+    .search-bar {
+      margin-left: 0; /* Reset margin for smaller screens */
+      margin-top: 10px; /* Add margin top for spacing on smaller screens */
+    }
+
+    .nav-links {
+      flex-direction: column; /* Change flex direction to column for smaller screens */
+      gap: 10px; /* Adjust gap between navigation links for smaller screens */
+      
+      li {
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-bottom: 10px; /* Add margin bottom for spacing between navigation links */
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+.hello{
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+@media screen and (max-width: 600px) {
+  .hello {
+    width: 90%; 
+     /* Adjust button width for smaller screens */
+    max-width: none; 
+    /* // Remove the max-width constraint */
+    font-size: 14px; 
+    /* Adjust font size for smaller screens */
+    /* Add any other adjustments needed for smaller screens */
+  }
+}
+
